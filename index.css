@@ -1,0 +1,111 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Button Styles */
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: 1px solid #333;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  color: #333;
+}
+
+/* Webcam Container Styles */
+#webcam-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#webcam-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: auto;
+  height: auto;
+  overflow: hidden;
+  border: 1px solid #333;
+}
+
+#loading-indicator {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  padding: 20px;
+  padding-left: 25px;
+}
+
+/* Label Container Styles */
+#label-container {
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#label-container > #normalLabel {
+  width: 150px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+  border: 1px solid #333;
+  background-color: #ccc;
+}
+
+#label-container > #maxLabel {
+  width: 150px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  #webcam-video {
+    max-width: 100%;
+  }
+
+  #label-container > div {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Image Detector</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <h1>Image Detector</h1>
+
+      <!-- Button Container -->
+      <div id="button-container">
+        <button type="button" id="startButton">Start</button>
+        <button type="button" id="stopButton" disabled>Stop</button>
+      </div>
+
+      <!-- Webcam Container -->
+      <div id="webcam-container">
+        <div id="webcam-video">
+          <span id="loading-indicator" style="display: none">Loading...</span>
+        </div>
+      </div>
+
+      <!-- Label Container -->
+      <div id="label-container"></div>
+    </div>
+
+    <!-- TensorFlow.js and Teachable Machine Image Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8.3/dist/teachablemachine-image.min.js"></script>
+    <!-- Custom JavaScript Code -->
+    <script src="index.js"></script>
+  </body>
+</html>
